@@ -3,13 +3,13 @@ jobs:
   build:
     working_directory: ~/mern-starter
     docker:
-      - image: node:7
+      - image: node:6
       - image: mongo:3.4.4
     steps:
       - checkout
       - run:
           name: update-npm
-          command: 'npm install -g npm@4.9'
+          command: 'npm install -g npm@4'
       - run:
           name: install-npm-wee
           command: npm install
