@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: update-npm
-          command: 'npm install -g npm@latest'
+          command: 'npm install -g npm@4'
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
